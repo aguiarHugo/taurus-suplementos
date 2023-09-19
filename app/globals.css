@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
  
 @layer base {
   :root {
@@ -68,9 +70,46 @@
  
 @layer base {
   * {
+    font-family: 'Poppins', sans-serif;
     @apply border-border;
   }
   body {
     @apply bg-background text-foreground;
   }
+}
+
+@layer utilities {
+  .flex-between {
+    @apply flex justify-between items-center;
+  }
+
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+
+  .flex-start {
+    @apply flex justify-start items-start;
+  }
+
+  .flex-end {
+    @apply flex justify-end;
+  }
+  .heading1 {
+    @apply text-[64px] leading-[67.2px] font-bold;
+  }
+
+  .heading2 {
+    @apply font-bold text-[48px] leading-[50.4px];
+  }
+
+  .heading3 {
+    @apply font-bold sm:text-[32px] sm:leading-[33.6px] text-[28px] leading-[40px] tracking-[-0.25%];
+  }
+}
+
+.text-gradient_red {
+  background: linear-gradient(90deg, rgba(155,34,38,1) 0%, rgba(229,55,80,1) 34%, rgba(255,255,255,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
