@@ -22,7 +22,9 @@ module.exports = {
         ring: "hsl(var(--ring))",
         red_100: "#E53750",
         dark_100: "#141414",
-        white_100: "#F7F7F7",
+        dark_200: "#2e2e2e",
+        light_100: "#F7F7F7",
+        title_gradient: "linear-gradient(90deg, rgba(229,55,80,1) 0%, rgba(247,247,247,1) 100%)",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
@@ -53,6 +55,9 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+      },
+      backgroundImage: {
+        banner: "url('/banner.png')",
       },
       borderRadius: {
         lg: "var(--radius)",
